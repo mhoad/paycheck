@@ -1,11 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '~> 3.2.11'
+gem 'pg'
+gem 'jquery-rails'
+gem 'jquery-rails-cdn'
+gem 'normalize-rails'
 
 group :development, :test do
-  gem 'pg'
   gem 'rspec-rails', '~> 2.12.1'
 end
+
 
 
 
@@ -17,6 +21,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+
 
 

@@ -58,5 +58,8 @@ module AffiliateSite
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    #jquery.js will be served from your server when CDN is not available
+    config.assets.precompile += ['jquery.js']
   end
 end
