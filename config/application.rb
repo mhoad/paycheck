@@ -61,5 +61,8 @@ module AffiliateSite
 
     #jquery.js will be served from your server when CDN is not available
     config.assets.precompile += ['jquery.js']
+
+    #Test fix for heroku deployment
+    config.assets.initialize_on_precompile = false
   end
 end
