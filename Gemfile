@@ -5,12 +5,14 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'jquery-rails-cdn'
 gem 'normalize-rails'
+gem "devise", "~> 2.2.2"
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.12.1'
   gem 'guard-rspec', '~> 2.3.3'
   gem 'guard-spork', '~> 1.4.1'
   gem 'spork', '~> 0.9.2'
+  gem "factory_girl_rails", "~> 4.1.0"
 end
 
 # Test gems on Macintosh OS X

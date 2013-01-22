@@ -7,13 +7,18 @@
   <meta name="viewport" content="width=device-width">
   <title>AffiliateSite</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= jquery_include_tag :google %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <%= render 'layouts/users_top_menu' %>
+    <%= render 'layouts/messages' %>
+  </header>
 
-<%= yield %>
+  <%= yield %>
 
-<%= jquery_include_tag :google %>
+
 </body>
 </html>
