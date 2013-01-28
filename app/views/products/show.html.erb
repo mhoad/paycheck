@@ -1,0 +1,3 @@
+<h2><%= @product.name %></h2>
+<p><%= @product.description %></p>
+<%= link_to "Delete Product", product_path(params[:id]), method: "delete" %>

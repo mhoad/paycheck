@@ -1,0 +1,21 @@
+<% if @product.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-error" style="width: 40%">
+      The form contains <%= pluralize(@product.errors.count, "error") %>.
+    </div>
+    <ul>
+    <% @product.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @product do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :description %>:
+  <%= f.text_area(:description, :cols => 20, :rows => 40) %> <br />
+  <%= f.submit %>
+<% end %>
